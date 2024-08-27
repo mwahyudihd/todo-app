@@ -1,0 +1,21 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "js": "npx esbuild ./utils/js/app.js --outfile=dist/js/script.js --bundle --watch",
+    "css": "npx tailwindcss -i ./utils/css/tailwind.css -o ./dist/css/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "tailwindcss": "^3.4.10"
+  },
+  "dependencies": {
+    "alpinejs": "^3.14.1",
+    "esbuild": "^0.23.1"
+  }
+}
