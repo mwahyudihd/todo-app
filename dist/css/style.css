@@ -653,8 +653,28 @@ video {
   border-width: 0;
 }
 
+.static {
+  position: static;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
 .-top-0 {
   top: -0px;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.-bottom-0 {
+  bottom: -0px;
 }
 
 .m-1 {
@@ -719,6 +739,11 @@ video {
   margin-bottom: auto;
 }
 
+.my-64 {
+  margin-top: 16rem;
+  margin-bottom: 16rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -767,6 +792,10 @@ video {
   height: 100%;
 }
 
+.h-64 {
+  height: 16rem;
+}
+
 .max-h-full {
   max-height: 100%;
 }
@@ -785,6 +814,10 @@ video {
 
 .max-w-screen-xl {
   max-width: 1280px;
+}
+
+.max-w-full {
+  max-width: 100%;
 }
 
 @keyframes pulse {
