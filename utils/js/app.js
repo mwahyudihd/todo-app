@@ -1,4 +1,5 @@
 import Alpine from "alpinejs";
+import Chart from 'chart.js/auto';
 
 window.Alpine = Alpine;
 
@@ -20,7 +21,7 @@ Alpine.data('todo' , () => ({
             id: 3,
             nama: 'Ngegame',
             tanggal: '08-08-2024',
-            status: false
+            status: true
         }
     ],
     todoName: '',
@@ -36,6 +37,27 @@ Alpine.data('todo' , () => ({
         }
         this.todoName = '';
         this.todoDate = '';
+    },
+    init() {
+        this.renderChart();
+    },
+    renderChart() {
+        const ctx = document.getElementById('todoChart').getContext('2d');
+        const totalTodos = this.todos.length;
+        const completedTodos = this.todos.filter(todo => todo.status).length;
+        const pendingTodos = totalTodos - completedTodos;
+
+        new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Completed', 'Pending'],
+                datasets: [{
+                    label: 'Todo Status',
+                    data: [completedTodos, pendingTodos],
+                    backgroundColor: ['#4caf50', '#f44336'],
+                }]
+            },
+        });
     }
 }));
 

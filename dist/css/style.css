@@ -723,6 +723,16 @@ video {
   margin-bottom: auto;
 }
 
+.mx-9 {
+  margin-left: 2.25rem;
+  margin-right: 2.25rem;
+}
+
+.mx-11 {
+  margin-left: 2.75rem;
+  margin-right: 2.75rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -741,6 +751,14 @@ video {
 
 .mt-4 {
   margin-top: 1rem;
+}
+
+.mr-5 {
+  margin-right: 1.25rem;
+}
+
+.mr-9 {
+  margin-right: 2.25rem;
 }
 
 .flex {
@@ -807,10 +825,6 @@ video {
 
 .cursor-pointer {
   cursor: pointer;
-}
-
-.flex-col {
-  flex-direction: column;
 }
 
 .flex-wrap {
@@ -988,14 +1002,6 @@ video {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
-.selection\:text-balance *::-moz-selection {
-  text-wrap: balance;
-}
-
-.selection\:text-balance *::selection {
-  text-wrap: balance;
-}
-
 .selection\:bg-yellow-500 *::-moz-selection {
   --tw-bg-opacity: 1;
   background-color: rgb(234 179 8 / var(--tw-bg-opacity));
@@ -1004,16 +1010,6 @@ video {
 .selection\:bg-yellow-500 *::selection {
   --tw-bg-opacity: 1;
   background-color: rgb(234 179 8 / var(--tw-bg-opacity));
-}
-
-.selection\:bg-yellow-700 *::-moz-selection {
-  --tw-bg-opacity: 1;
-  background-color: rgb(161 98 7 / var(--tw-bg-opacity));
-}
-
-.selection\:bg-yellow-700 *::selection {
-  --tw-bg-opacity: 1;
-  background-color: rgb(161 98 7 / var(--tw-bg-opacity));
 }
 
 .selection\:text-slate-50 *::-moz-selection {
@@ -1026,14 +1022,6 @@ video {
   color: rgb(248 250 252 / var(--tw-text-opacity));
 }
 
-.selection\:text-balance::-moz-selection {
-  text-wrap: balance;
-}
-
-.selection\:text-balance::selection {
-  text-wrap: balance;
-}
-
 .selection\:bg-yellow-500::-moz-selection {
   --tw-bg-opacity: 1;
   background-color: rgb(234 179 8 / var(--tw-bg-opacity));
@@ -1042,16 +1030,6 @@ video {
 .selection\:bg-yellow-500::selection {
   --tw-bg-opacity: 1;
   background-color: rgb(234 179 8 / var(--tw-bg-opacity));
-}
-
-.selection\:bg-yellow-700::-moz-selection {
-  --tw-bg-opacity: 1;
-  background-color: rgb(161 98 7 / var(--tw-bg-opacity));
-}
-
-.selection\:bg-yellow-700::selection {
-  --tw-bg-opacity: 1;
-  background-color: rgb(161 98 7 / var(--tw-bg-opacity));
 }
 
 .selection\:text-slate-50::-moz-selection {
