@@ -6,7 +6,7 @@
     <title>To-do: List App</title>
     <link rel="stylesheet" href="dist/css/style.css">
 </head>
-<body x-data="todo" class="max-w-full max-h-full h-full">
+<body x-data="todo" class="max-w-full max-h-full h-full selection:bg-yellow-500 selection:text-slate-50">
     <section class="mx-auto my-auto">
         <div class="m-3">
             <div class="container bg-lime-600 border-opacity-55 filter-blur bg-opacity-70 border border-green-900 rounded-xl shadow-lg shadow-green-900 mx-auto my-10 py-3">
@@ -20,17 +20,17 @@
                         <div>
                             
                         </div>
-                        <div class="py-3 mx-5" x-show="isOpen">
+                        <div class="py-3 mx-5" x-show="isOpen"  x-transition:leave.duration.700ms x-transition:enter.scale.80.duration.1000ms>
                             <label for="date" class="m-1 font-semibold text-green-900">Date :</label>
                             <input id="additional-task" type="checkbox" x-model="isOpen = ! isOpen" hidden class="border border-rounded border-yellow-600 w-6 h-5">
                             <input id="date" type="date" x-model="todoDate" class="form-control" >
                         </div>
                         <div class="flex flex-wrap mx-auto border rounded-xl">
-                            <label x-show="!isOpen" class="mx-2 bg-yellow-300 border cursor-pointer border-green-900 hover:bg-yellow-600 hover:text-green-300 text-green-900 rounded-xl p-3 my-3 py-3" for="additional-task">Date <span class="font-extrabold font-mono text-2xl">+</span></label>
-                            <label x-show="isOpen" class="mx-2 bg-yellow-300 border cursor-pointer border-green-900 hover:bg-yellow-600 hover:text-green-300 text-green-900 rounded-xl p-3 my-3 py-3" for="additional-task">Date <span class="font-extrabold font-mono text-2xl">-</span></label>
+                            <label x-show="!isOpen" class="mx-2 bg-yellow-300 border cursor-pointer border-green-900 hover:bg-yellow-600 hover:text-green-300 text-green-900 rounded-xl p-3 my-3 py-3" for="additional-task" x-transition:enter.scale.80>Date <span class="font-extrabold font-mono text-2xl">+</span></label>
+                            <label x-show="isOpen" class="mx-2 bg-yellow-300 border cursor-pointer border-green-900 hover:bg-yellow-600 hover:text-green-300 text-green-900 rounded-xl p-3 my-3 py-3" for="additional-task" x-transition:enter.scale.80>Date <span class="font-extrabold font-mono text-2xl">-</span></label>
                             <button @click.prevent="addTodo()" class="mx-2 border bg-yellow-300 rounded-xl px-4 my-3 border-green-900 hover:bg-yellow-600 hover:text-green-300 text-green-900">Add <span class="font-extrabold font-mono text-2xl">+</span> </button>
                         </div>
-                        <div x-show="isAlert" class="bg-red-600 m-4 mx-auto text-yellow-200 p-3 animate-pulse rounded-lg">
+                        <div x-show="isAlert" class="bg-red-600 m-4 mx-auto text-yellow-200 p-3 animate-pulse rounded-lg"  x-transition:enter.duration.1000ms  x-transition:leave.duration.400ms>
                             You must enter the Task title
                         </div>
                     </form>
