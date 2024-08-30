@@ -17603,6 +17603,9 @@ ${expression ? 'Expression: "' + expression + '"\n\n' : ""}`, el);
     init() {
       this.renderChart();
     },
+    removeTask(todo) {
+      this.todos = this.todos.filter((task) => task !== todo);
+    },
     renderChart() {
       const ctx = document.getElementById("todoChart").getContext("2d");
       const totalTodos = this.todos.length;
