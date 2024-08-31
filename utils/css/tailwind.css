@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
-    /* *{
-        border: 2px solid salmon;
-    } */
-}
-
 @layer components{
     .form-control{
         @apply border border-yellow-400 rounded-lg focus:ring-2 focus:ring-yellow-600 p-2 pl-3 text-green-900 w-[250px] md:w-[300px] lg:w-[350px] xl:w-[583px] 2xl:w-[600px];
