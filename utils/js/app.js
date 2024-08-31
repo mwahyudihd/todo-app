@@ -38,18 +38,15 @@ Alpine.data('todo' , () => ({
         this.todoName = '';
         this.todoDate = '';
     },
-    init() {
+    init(){
         this.renderChart();
-    },
-    removeTask(todo){
-        this.todos = this.todos.filter((task) => task !== todo);
     },
     renderChart() {
         const ctx = document.getElementById('todoChart').getContext('2d');
         const totalTodos = this.todos.length;
         const completedTodos = this.todos.filter(todo => todo.status).length;
         const pendingTodos = totalTodos - completedTodos;
-
+        
         new Chart(ctx, {
             type: 'doughnut',
             data: {
@@ -61,6 +58,9 @@ Alpine.data('todo' , () => ({
                 }]
             },
         });
+    },
+    removeTask(todo){
+        this.todos = this.todos.filter((task) => task !== todo);
     }
 }));
 
