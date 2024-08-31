@@ -17589,6 +17589,7 @@ ${expression ? 'Expression: "' + expression + '"\n\n' : ""}`, el);
     todoName: "",
     todoDate: "",
     isAlert: false,
+    chartContainer: null,
     addTodo() {
       this.isAlert = this.isAlert && false;
       if (this.todoName || this.todoName.length > 0) {
@@ -17600,15 +17601,15 @@ ${expression ? 'Expression: "' + expression + '"\n\n' : ""}`, el);
       this.todoName = "";
       this.todoDate = "";
     },
-    init() {
-      this.renderChart();
-    },
     renderChart() {
       const ctx = document.getElementById("todoChart").getContext("2d");
       const totalTodos = this.todos.length;
       const completedTodos = this.todos.filter((todo) => todo.status).length;
       const pendingTodos = totalTodos - completedTodos;
-      new auto_default(ctx, {
+      if (this.chartContainer) {
+        this.chartContainer.destroy();
+      }
+      this.chartContainer = new auto_default(ctx, {
         type: "doughnut",
         data: {
           labels: ["Completed", "Pending"],
@@ -17622,6 +17623,12 @@ ${expression ? 'Expression: "' + expression + '"\n\n' : ""}`, el);
     },
     removeTask(todo) {
       this.todos = this.todos.filter((task) => task !== todo);
+    },
+    init() {
+      this.renderChart();
+      this.$watch("todos", (value) => {
+        this.renderChart();
+      });
     }
   }));
   module_default.start();
