@@ -5,16 +5,12 @@ A simple and responsive to-do list application built using Tailwind CSS and Alpi
 
 ## Tech Stack
 
-- **Styling:**
-<br>
- ![CSS](https://img.shields.io/badge/Tailwindcss-5C2D91?style=for-the-badge&logo=tailwind%20css&logoColor=white)
- ![Chart](https://img.shields.io/badge/Chart_js-FFD7C4?style=for-the-badge&logo=chart%20js&logoColor=white)
-- **Framework:**
-<br>
- ![CSS](https://img.shields.io/badge/Alpine_Js-FFD7C4?style=for-the-badge&logo=alpine%20js&logoColor=white)
-- **Package:**
-<br>
- ![NPM](https://img.shields.io/badge/npm-800000?style=for-the-badge&logo=npm&logoColor=white)
+- **Styling:** <br> 
+![CSS](https://img.shields.io/badge/Tailwindcss-5C2D91?style=for-the-badge&logo=tailwind%20css&logoColor=white) ![Chart](https://img.shields.io/badge/Chart_js-FFD7C4?style=for-the-badge&logo=chart%20js&logoColor=white)
+- **Framework:** <br> 
+![CSS](https://img.shields.io/badge/Alpine_Js-FFD7C4?style=for-the-badge&logo=alpine%20js&logoColor=white)
+- **Package:** <br> 
+![NPM](https://img.shields.io/badge/npm-800000?style=for-the-badge&logo=npm&logoColor=white)
 
 ## Features
 
