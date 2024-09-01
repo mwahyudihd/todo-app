@@ -6,12 +6,15 @@ A simple and responsive to-do list application built using Tailwind CSS and Alpi
 ## Tech Stack
 
 - **Styling:**
-- ![CSS](https://img.shields.io/badge/Tailwindcss-5C2D91?style=for-the-badge&logo=tailwind%20css&logoColor=white)
-- ![Chart](https://img.shields.io/badge/Chart_js-FFD7C4?style=for-the-badge&logo=chart%20js&logoColor=white)
+<br>
+ ![CSS](https://img.shields.io/badge/Tailwindcss-5C2D91?style=for-the-badge&logo=tailwind%20css&logoColor=white)
+ ![Chart](https://img.shields.io/badge/Chart_js-FFD7C4?style=for-the-badge&logo=chart%20js&logoColor=white)
 - **Framework:**
-- ![CSS](https://img.shields.io/badge/Alpine_Js-FFD7C4?style=for-the-badge&logo=alpine%20js&logoColor=white)
+<br>
+ ![CSS](https://img.shields.io/badge/Alpine_Js-FFD7C4?style=for-the-badge&logo=alpine%20js&logoColor=white)
 - **Package:**
-- ![NPM](https://img.shields.io/badge/npm-800000?style=for-the-badge&logo=npm&logoColor=white)
+<br>
+ ![NPM](https://img.shields.io/badge/npm-800000?style=for-the-badge&logo=npm&logoColor=white)
 
 ## Features
 
@@ -24,7 +27,7 @@ A simple and responsive to-do list application built using Tailwind CSS and Alpi
 ## Demo
 
 Follow the Link:
-
+<br>
 [![NPM](https://img.shields.io/badge/DEMO>>-7A1CAC?style=for-the-badge&logo=&logoColor=white)](https://mwahyudihd.github.io/todo-app/)
 ## License
 This project is open-source and available under the [MIT](LICENSE)
